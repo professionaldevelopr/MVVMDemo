@@ -79,7 +79,7 @@ private fun HomePoster(
             ),
         color = MaterialTheme.colors.onBackground,
         elevation = 8.dp,
-        shape = RoundedCornerShape(8.dp)
+        shape = RoundedCornerShape(12.dp)
     ) {
         ConstraintLayout {
             val (image, title, content) = createRefs()
