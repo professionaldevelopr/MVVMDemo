@@ -1,84 +1,133 @@
-<h1 align="center">DisneyCompose</h1></br>
-<p align="center">  
-A demo Disney app using compose and Hilt based on modern Android tech-stacks and MVVM architecture. Fetching data from the network and integrating persisted data in the database via repository pattern.<br> Declarative UI version of the <a href="https://github.com/skydoves/DisneyMotions" target="_blank"> DisneyMotions </a> using compose.
-</p>
-</br>
+[comment]: <> (<h1 align="center">DisneyCompose</h1></br>)
 
-<p align="center">
-  <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
-  <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
-  <a href="https://github.com/skydoves/DisneyCompose/actions"><img alt="Build Status" src="https://github.com/skydoves/DisneyCompose/workflows/Android%20CI/badge.svg"/></a>
-  <a href="https://proandroiddev.com/exploring-jetpack-compose-with-dagger-hilt-and-viewmodels-3e0ca939daa7"><img alt="Medium" src="https://skydoves.github.io/badges/Story-Medium.svg"/></a>
-  <a href="https://github.com/skydoves"><img alt="Profile" src="https://skydoves.github.io/badges/skydoves.svg"/></a> 
-</p>
+[comment]: <> (<p align="center">  )
 
-## Download
+[comment]: <> (A demo Disney app using compose and Hilt based on modern Android tech-stacks and MVVM architecture. Fetching data from the network and integrating persisted data in the database via repository pattern.<br> Declarative UI version of the <a href="https://github.com/skydoves/DisneyMotions" target="_blank"> DisneyMotions </a> using compose.)
 
-Go to the [Releases](https://github.com/skydoves/DisneyCompose/releases) to download the latest APK.
+[comment]: <> (</p>)
 
-## Screenshots
+[comment]: <> (</br>)
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/24237865/93901108-238eb000-fd31-11ea-9fac-c9ba1eca146c.gif" width="32%"/>
-<img src="/preview/preview0.gif" width="32%"/>
-<img src="/preview/preview1.gif" width="32%"/>
-</p>
+[comment]: <> (<p align="center">)
 
-## Tech stack & Open-source libraries
+[comment]: <> (  <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>)
 
-- Minimum SDK level 21
-- 100% [Kotlin](https://kotlinlang.org/) based
-  + [Coroutines](https://github.com/Kotlin/kotlinx.coroutines)
-  + [Flow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/)
-  for asynchronous.
-- Hilt for dependency injection.
-- JetPack
-    - Compose - A modern toolkit for building native Android UI.
-    - Lifecycle - dispose observing data when lifecycle state changes.
-    - ViewModel - UI related data holder, lifecycle aware.
-    - Room Persistence - construct database.
-    - App Startup - Provides a straightforward, performant way to initialize components at
-      application startup.
-- Architecture
-    - MVVM Architecture (Declarative View - ViewModel - Model)
-    - Repository pattern
-- Material Design & Animations
-- [Accompanist](https://github.com/google/accompanist) - A collection of extension libraries for
-  Jetpack Compose.
-- [Landscapist](https://github.com/skydoves/landscapist) - Jetpack Compose image loading library
-  with shimmer & circular reveal animations.
-- [Orchestra-Balloon](https://github.com/skydoves/orchestra) - Jetpack Compose tooltips library.
-- [Retrofit2 & OkHttp3](https://github.com/square/retrofit) - construct the REST APIs and paging
-  network data.
-- [Sandwich](https://github.com/skydoves/Sandwich) - construct lightweight http API response and
-  handling error responses.
-- [WhatIf](https://github.com/skydoves/whatif) - checking nullable object and empty collections more
-  fluently.
-- [Balloon](https://github.com/skydoves/balloon) - A lightweight popup like tooltips, fully
-  customizable with arrow and animations.
-- [Timber](https://github.com/JakeWharton/timber) - logging.
+[comment]: <> (  <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>)
 
-## Find this repository useful? :heart:
+[comment]: <> (  <a href="https://github.com/skydoves/DisneyCompose/actions"><img alt="Build Status" src="https://github.com/skydoves/DisneyCompose/workflows/Android%20CI/badge.svg"/></a>)
 
-Support it by joining __[stargazers](https://github.com/skydoves/DisneyCompose/stargazers)__ for
-this repository. :star: <br>
-And __[follow](https://github.com/skydoves)__ me for my next creations! 🤩
+[comment]: <> (  <a href="https://proandroiddev.com/exploring-jetpack-compose-with-dagger-hilt-and-viewmodels-3e0ca939daa7"><img alt="Medium" src="https://skydoves.github.io/badges/Story-Medium.svg"/></a>)
 
-<img src="https://user-images.githubusercontent.com/24237865/141674368-6013d77c-d52b-4bb1-afe4-9a57a06be32f.jpg" width="18%" align="right" />
+[comment]: <> (  <a href="https://github.com/skydoves"><img alt="Profile" src="https://skydoves.github.io/badges/skydoves.svg"/></a> )
 
-## Contents Credits
+[comment]: <> (</p>)
 
-All copyrights of the contents, concepts, and phrases used for this open-source project belong
-to [The Walt Disney Company](https://www.disneyplus.com/).
+[comment]: <> (## Download)
 
-# License
+[comment]: <> (Go to the [Releases]&#40;https://github.com/skydoves/DisneyCompose/releases&#41; to download the latest APK.)
 
-```xml
-Designed and developed by 2020 skydoves (Jaewoong Eum)
+[comment]: <> (## Screenshots)
 
-    Licensed under the Apache License, Version 2.0 (the "License");you may not use this file except in compliance with the License.You may obtain a copy of the License at
+[comment]: <> (<p align="center">)
 
-    http://www.apache.org/licenses/LICENSE-2.0
+[comment]: <> (<img src="https://user-images.githubusercontent.com/24237865/93901108-238eb000-fd31-11ea-9fac-c9ba1eca146c.gif" width="32%"/>)
 
-    Unless required by applicable law or agreed to in writing, softwaredistributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions andlimitations under the License.
-```
+[comment]: <> (<img src="/preview/preview0.gif" width="32%"/>)
+
+[comment]: <> (<img src="/preview/preview1.gif" width="32%"/>)
+
+[comment]: <> (</p>)
+
+[comment]: <> (## Tech stack & Open-source libraries)
+
+[comment]: <> (- Minimum SDK level 21)
+
+[comment]: <> (- 100% [Kotlin]&#40;https://kotlinlang.org/&#41; based)
+
+[comment]: <> (  + [Coroutines]&#40;https://github.com/Kotlin/kotlinx.coroutines&#41;)
+
+[comment]: <> (  + [Flow]&#40;https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/&#41;)
+
+[comment]: <> (  for asynchronous.)
+
+[comment]: <> (- Hilt for dependency injection.)
+
+[comment]: <> (- JetPack)
+
+[comment]: <> (    - Compose - A modern toolkit for building native Android UI.)
+
+[comment]: <> (    - Lifecycle - dispose observing data when lifecycle state changes.)
+
+[comment]: <> (    - ViewModel - UI related data holder, lifecycle aware.)
+
+[comment]: <> (    - Room Persistence - construct database.)
+
+[comment]: <> (    - App Startup - Provides a straightforward, performant way to initialize components at)
+
+[comment]: <> (      application startup.)
+
+[comment]: <> (- Architecture)
+
+[comment]: <> (    - MVVM Architecture &#40;Declarative View - ViewModel - Model&#41;)
+
+[comment]: <> (    - Repository pattern)
+
+[comment]: <> (- Material Design & Animations)
+
+[comment]: <> (- [Accompanist]&#40;https://github.com/google/accompanist&#41; - A collection of extension libraries for)
+
+[comment]: <> (  Jetpack Compose.)
+
+[comment]: <> (- [Landscapist]&#40;https://github.com/skydoves/landscapist&#41; - Jetpack Compose image loading library)
+
+[comment]: <> (  with shimmer & circular reveal animations.)
+
+[comment]: <> (- [Orchestra-Balloon]&#40;https://github.com/skydoves/orchestra&#41; - Jetpack Compose tooltips library.)
+
+[comment]: <> (- [Retrofit2 & OkHttp3]&#40;https://github.com/square/retrofit&#41; - construct the REST APIs and paging)
+
+[comment]: <> (  network data.)
+
+[comment]: <> (- [Sandwich]&#40;https://github.com/skydoves/Sandwich&#41; - construct lightweight http API response and)
+
+[comment]: <> (  handling error responses.)
+
+[comment]: <> (- [WhatIf]&#40;https://github.com/skydoves/whatif&#41; - checking nullable object and empty collections more)
+
+[comment]: <> (  fluently.)
+
+[comment]: <> (- [Balloon]&#40;https://github.com/skydoves/balloon&#41; - A lightweight popup like tooltips, fully)
+
+[comment]: <> (  customizable with arrow and animations.)
+
+[comment]: <> (- [Timber]&#40;https://github.com/JakeWharton/timber&#41; - logging.)
+
+[comment]: <> (## Find this repository useful? :heart:)
+
+[comment]: <> (Support it by joining __[stargazers]&#40;https://github.com/skydoves/DisneyCompose/stargazers&#41;__ for)
+
+[comment]: <> (this repository. :star: <br>)
+
+[comment]: <> (And __[follow]&#40;https://github.com/skydoves&#41;__ me for my next creations! 🤩)
+
+[comment]: <> (<img src="https://user-images.githubusercontent.com/24237865/141674368-6013d77c-d52b-4bb1-afe4-9a57a06be32f.jpg" width="18%" align="right" />)
+
+[comment]: <> (## Contents Credits)
+
+[comment]: <> (All copyrights of the contents, concepts, and phrases used for this open-source project belong)
+
+[comment]: <> (to [The Walt Disney Company]&#40;https://www.disneyplus.com/&#41;.)
+
+[comment]: <> (# License)
+
+[comment]: <> (```xml)
+
+[comment]: <> (Designed and developed by 2020 skydoves &#40;Jaewoong Eum&#41;)
+
+[comment]: <> (    Licensed under the Apache License, Version 2.0 &#40;the "License"&#41;;you may not use this file except in compliance with the License.You may obtain a copy of the License at)
+
+[comment]: <> (    http://www.apache.org/licenses/LICENSE-2.0)
+
+[comment]: <> (    Unless required by applicable law or agreed to in writing, softwaredistributed under the License is distributed on an "AS IS" BASIS,WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.See the License for the specific language governing permissions andlimitations under the License.)
+
+[comment]: <> (```)
